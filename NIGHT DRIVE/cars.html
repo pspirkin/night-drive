@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore the NIGHT DRIVE car collection."
+    >
+
+    <title>NIGHT DRIVE | Cars</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            NIGHT<span>DRIVE</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+
+            <a href="cars.html" class="nav-link">
+                Cars
+            </a>
+
+            <a href="about.html" class="nav-link">
+                About
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                Contact
+            </a>
+
+            <a href="cars.html" class="nav-button">
+                Explore Cars
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <div class="container reveal">
+
+            <p class="section-label">
+                NIGHT DRIVE COLLECTION
+            </p>
+
+            <h1>
+                OUR <span>CARS</span>
+            </h1>
+
+            <p>
+                Find the machine that matches your personality.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section catalog-section">
+
+        <div class="container">
+
+            <div class="catalog-controls reveal">
+
+                <div class="filters">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="sport">
+                        Sport
+                    </button>
+
+                    <button class="filter-btn" data-filter="supercar">
+                        Supercar
+                    </button>
+
+                    <button class="filter-btn" data-filter="suv">
+                        SUV
+                    </button>
+
+                    <button class="filter-btn" data-filter="electric">
+                        Electric
+                    </button>
+
+                </div>
+
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="carSearch"
+                        placeholder="Search cars..."
+                        aria-label="Search cars"
+                    >
+
+                    <span>⌕</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="catalog-grid" id="carGrid">
+
+
+                <!-- 1 -->
+
+                <article
+                    class="catalog-card reveal"
+                    data-category="supercar"
+                    data-name="night vortex"
+                >
+
+                    <div class="catalog-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/17580107/pexels-photo-17580107.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="Night Vortex"
+                        >
+
+                        <span>SUPERCAR</span>
+
+                    </div>
+
+                    <div class="catalog-content">
+
+                        <h3>Night Vortex</h3>
+
+                        <p class="price">$285,000</p>
+
+                        <div class="catalog-specs">
+                            <span>720 HP</span>
+                            <span>320 KM/H</span>
+                        </div>
+
+                        <button
+                            class="catalog-view"
+                            data-car="Night Vortex"
+                            data-description="Extreme fictional supercar focused on maximum performance."
+                            data-speed="320 KM/H"
+                            data-power="720 HP"
+                        >
+                            View →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 2 -->
+
+                <article
+                    class="catalog-card reveal"
+                    data-category="sport"
+                    data-name="night razor"
+                >
+
+                    <div class="catalog-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/5214038/pexels-photo-5214038.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="Night Razor"
+                        >
+
+                        <span>SPORT</span>
+
+                    </div>
+
+                    <div class="catalog-content">
+
+                        <h3>Night Razor</h3>
+
+                        <p class="price">$118,000</p>
+
+                        <div class="catalog-specs">
+                            <span>460 HP</span>
+                            <span>285 KM/H</span>
+                        </div>
+
+                        <button
+                            class="catalog-view"
+                            data-car="Night Razor"
+                            data-description="A fictional lightweight sports coupe made for precision driving."
+                            data-speed="285 KM/H"
+                            data-power="460 HP"
+                        >
+                            View →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 3 -->
+
+                <article
+                    class="catalog-card reveal"
+                    data-category="suv"
+                    data-name="night titan"
+                >
+
+                    <div class="catalog-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/2056075/pexels-photo-2056075.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="Night Titan"
+                        >
+
+                        <span>SUV</span>
+
+                    </div>
+
+                    <div class="catalog-content">
+
+                        <h3>Night Titan</h3>
+
+                        <p class="price">$96,000</p>
+
+                        <div class="catalog-specs">
+                            <span>510 HP</span>
+                            <span>260 KM/H</span>
+                        </div>
+
+                        <button
+                            class="catalog-view"
+                            data-car="Night Titan"
+                            data-description="A fictional high-performance SUV built for long-distance journeys."
+                            data-speed="260 KM/H"
+                            data-power="510 HP"
+                        >
+                            View →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 4 -->
+
+                <article
+                    class="catalog-card reveal"
+                    data-category="electric"
+                    data-name="night pulse"
+                >
+
+                    <div class="catalog-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/34400566/pexels-photo-34400566.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="Night Pulse"
+                        >
+
+                        <span>ELECTRIC</span>
+
+                    </div>
+
+                    <div class="catalog-content">
+
+                        <h3>Night Pulse</h3>
+
+                        <p class="price">$134,000</p>
+
+                        <div class="catalog-specs">
+                            <span>640 HP</span>
+                            <span>290 KM/H</span>
+                        </div>
+
+                        <button
+                            class="catalog-view"
+                            data-car="Night Pulse"
+                            data-description="A fictional electric performance machine with instant acceleration."
+                            data-speed="290 KM/H"
+                            data-power="640 HP"
+                        >
+                            View →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 5 -->
+
+                <article
+                    class="catalog-card reveal"
+                    data-category="supercar"
+                    data-name="night phantom"
+                >
+
+                    <div class="catalog-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/31362314/pexels-photo-31362314.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="Night Phantom"
+                        >
+
+                        <span>SUPERCAR</span>
+
+                    </div>
+
+                    <div class="catalog-content">
+
+                        <h3>Night Phantom</h3>
+
+                        <p class="price">$340,000</p>
+
+                        <div class="catalog-specs">
+                            <span>850 HP</span>
+                            <span>345 KM/H</span>
+                        </div>
+
+                        <button
+                            class="catalog-view"
+                            data-car="Night Phantom"
+                            data-description="A fictional hyper-performance machine with aggressive aerodynamic design."
+                            data-speed="345 KM/H"
+                            data-power="850 HP"
+                        >
+                            View →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 6 -->
+
+                <article
+                    class="catalog-card reveal"
+                    data-category="sport"
+                    data-name="night strike"
+                >
+
+                    <div class="catalog-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/5214386/pexels-photo-5214386.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="Night Strike"
+                        >
+
+                        <span>SPORT</span>
+
+                    </div>
+
+                    <div class="catalog-content">
+
+                        <h3>Night Strike</h3>
+
+                        <p class="price">$105,000</p>
+
+                        <div class="catalog-specs">
+                            <span>430 HP</span>
+                            <span>275 KM/H</span>
+                        </div>
+
+                        <button
+                            class="catalog-view"
+                            data-car="Night Strike"
+                            data-description="A fictional rear-wheel-drive sports machine with a sharp character."
+                            data-speed="275 KM/H"
+                            data-power="430 HP"
+                        >
+                            View →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 7 -->
+
+                <article
+                    class="catalog-card reveal"
+                    data-category="suv"
+                    data-name="night summit"
+                >
+
+                    <div class="catalog-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/19410435/pexels-photo-19410435.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="Night Summit"
+                        >
+
+                        <span>SUV</span>
+
+                    </div>
+
+                    <div class="catalog-content">
+
+                        <h3>Night Summit</h3>
+
+                        <p class="price">$89,000</p>
+
+                        <div class="catalog-specs">
+                            <span>390 HP</span>
+                            <span>235 KM/H</span>
+                        </div>
+
+                        <button
+                            class="catalog-view"
+                            data-car="Night Summit"
+                            data-description="A fictional premium SUV combining comfort with dynamic handling."
+                            data-speed="235 KM/H"
+                            data-power="390 HP"
+                        >
+                            View →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 8 -->
+
+                <article
+                    class="catalog-card reveal"
+                    data-category="electric"
+                    data-name="night flux"
+                >
+
+                    <div class="catalog-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/16756200/pexels-photo-16756200.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="Night Flux"
+                        >
+
+                        <span>ELECTRIC</span>
+
+                    </div>
+
+                    <div class="catalog-content">
+
+                        <h3>Night Flux</h3>
+
+                        <p class="price">$124,000</p>
+
+                        <div class="catalog-specs">
+                            <span>580 HP</span>
+                            <span>270 KM/H</span>
+                        </div>
+
+                        <button
+                            class="catalog-view"
+                            data-car="Night Flux"
+                            data-description="A fictional futuristic electric vehicle designed around intelligent mobility."
+                            data-speed="270 KM/H"
+                            data-power="580 HP"
+                        >
+                            View →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <div id="noResults" class="no-results">
+                <h3>No cars found</h3>
+                <p>Try another search or category.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div>
+            <a href="index.html" class="logo">
+                NIGHT<span>DRIVE</span>
+            </a>
+
+            <p>Performance. Design. Freedom.</p>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>© 2026 NIGHT DRIVE. Portfolio concept.</p>
+        <p>Built with HTML · CSS · JavaScript</p>
+    </div>
+
+</footer>
+
+
+<!-- MODAL -->
+
+<div class="modal" id="carModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close">&times;</button>
+
+        <p class="section-label">NIGHT DRIVE</p>
+
+        <h2 id="modalTitle">Car</h2>
+
+        <p id="modalDescription"></p>
+
+        <div class="modal-specs">
+
+            <div>
+                <span>TOP SPEED</span>
+                <strong id="modalSpeed"></strong>
+            </div>
+
+            <div>
+                <span>POWER</span>
+                <strong id="modalPower"></strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<button class="back-to-top">
+    ↑
+</button>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
